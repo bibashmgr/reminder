@@ -1,0 +1,17 @@
+{
+  "name": "reminder-server",
+  "version": "1.0.0",
+  "description": "Server for reminder-app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "bibashmagar",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
