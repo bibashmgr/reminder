@@ -1,10 +1,15 @@
 // scss
 import './App.scss';
+import Header from './components/Header';
+import Form from './components/Form';
+import List from './components/List';
 
-function App() {
+const App = () => {
   return (
     <>
-      <div>Hello</div>
+      <Header />
+      <Form />
+      <List />
     </>
   );
 }
