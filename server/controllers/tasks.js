@@ -10,7 +10,7 @@ export const getTasks = async (req, res) => {
 };
 
 export const createTask = async (req, res) => {
-  const task = res.body;
+  const task = req.body;
   const newTask = new TaskMessage(task);
   try {
     await newTask.save();
