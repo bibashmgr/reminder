@@ -1,13 +1,13 @@
 import React from 'react';
 
 // elements
-import { ListContainer, ListBox, Item, ItemContent, ContentCheckBox, ContentText , ItemIcons, EditIcon, DeleteIcon, TimeBox } from './ListElements';
+import { ListContainer, ListBox, Item, ItemContent, ContentCheckBox, ContentText , ItemIcons, EditIcon, DeleteIcon } from './ListElements';
 
 const List = () => {
   return (
       <ListContainer>
           <ListBox>
-            <TimeBox>9:00 AM</TimeBox>
+            {/* <TimeBox>9:00 AM</TimeBox> */}
             <Item>
               <ItemContent>
                 <ContentCheckBox type='checkbox' />
