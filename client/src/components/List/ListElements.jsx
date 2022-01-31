@@ -21,6 +21,7 @@ export const Item = styled.li`
     width: 100%;
     height: 2.5rem;
     padding: 10px;
+    margin: 10px 0px;
     border: 2px solid #2b2b2b;
     display: flex;
     align-items: center;

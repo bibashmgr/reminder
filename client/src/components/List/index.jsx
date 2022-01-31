@@ -15,7 +15,14 @@ const List = () => {
       .then(res => res.data)
       .then(data => setTasks(data))
       .catch(error => console.log(error.message));
+
+      //TODO: Add clean-up function
+
     }, []);
+
+    const handleCheck = (e) => {
+      
+    }
 
   return (
       <ListContainer>
@@ -24,8 +31,8 @@ const List = () => {
               return(
                 <Item key={index}>
                   <ItemContent>
-                    <ContentCheckBox type='checkbox' />
-                    <ContentText type='text' value={task.taskname} disabled />
+                    <ContentCheckBox type='checkbox' data-taskid={task._id} onClick={handleCheck} />
+                    <ContentText type='text' value={task.taskname} id={task._id} disabled />
                   </ItemContent>
                   <ItemIcons>
                     <EditIcon />

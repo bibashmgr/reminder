@@ -25,6 +25,8 @@ const Form = () => {
     axios.post(url, taskData)
       .then(res => console.log(res))
       .catch(error => console.log(error.message));
+
+    setTaskData({taskname:''});
   }
 
   return (
